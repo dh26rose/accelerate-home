@@ -60,23 +60,6 @@ If you prefer to run Playwright manually:
 npx playwright test grade-notifications --config=tests-e2e/playwright.config.ts
 ```
 
----
-
-## 🧪 How to Run the Tests
-
-The test suite uses **Playwright** and automatically starts the server via its `webServer` configuration.
-
-```bash
-npm test                 # run all tests
-npm run test:grades      # run only the grade‑notification tests
-```
-
-If you prefer to run Playwright manually:
-
-```bash
-npx playwright test grade-notifications --config=tests-e2e/playwright.config.ts
-```
-
 Overriding the server port or base URL
 
 The server listens on port **2022** by default. You can change the port for development or testing using the `PORT` environment variable.  
