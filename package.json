@@ -1,0 +1,23 @@
+{
+  "name": "accelerate-home",
+  "version": "1.0.0",
+  "description": "Real-time grade notification system using Fastify SSE, TypeScript, and Playwright",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/src/index.ts",
+    "dev:server": "tsx server/src/index.ts",
+    "test": "playwright test --config=tests-e2e/playwright.config.ts",
+    "test:grades": "playwright test grade-notifications --config=tests-e2e/playwright.config.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "fastify": "^5.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^25.2.3",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
